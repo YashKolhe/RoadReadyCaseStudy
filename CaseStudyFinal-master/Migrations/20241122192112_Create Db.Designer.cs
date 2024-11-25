@@ -12,8 +12,8 @@ using RoadReady.Data;
 namespace RoadReady.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241114204546_Db creation")]
-    partial class Dbcreation
+    [Migration("20241122192112_Create Db")]
+    partial class CreateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -419,7 +419,6 @@ namespace RoadReady.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 

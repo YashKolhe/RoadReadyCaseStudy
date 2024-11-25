@@ -1,62 +1,152 @@
 ﻿using RoadReady.Models;
 using RoadReady.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.Extensions.Logging;
+using RoadReady.Exceptions;
+using RoadReady.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace RoadReady.Controllers
 {
+    [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
     public class PaymentController : ControllerBase
     {
+        private readonly ApplicationDbContext _context;
         private readonly IPaymentService _paymentService;
+        private readonly ILogger<PaymentController> _logger;
 
-        public PaymentController(IPaymentService paymentService)
+        public PaymentController(ApplicationDbContext context,IPaymentService paymentService, ILogger<PaymentController> logger)
         {
+            _context = context;
             _paymentService = paymentService;
+            _logger = logger;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult GetAll()
         {
-            var payments = _paymentService.GetAllPayments();
-            return Ok(payments);
+            try
+            {
+                _logger.LogInformation("Retrieving all Payments.");
+                var payments = _paymentService.GetAllPayments();
+                return Ok(payments);
+            }catch(PaymentNotFoundException ex)
+            {
+                _logger.LogError(ex, "Failed to retrieve all payments.");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpGet("{id}")]
         public IActionResult GetPaymentById(int id)
         {
-            var payment = _paymentService.GetPaymentById(id);
-            if (payment == null)
-                return NotFound("Payment not found");
+            try
+            {
+                _logger.LogInformation($"Retrieving payment with ID: {id}",id);
+                var payment = _paymentService.GetPaymentById(id);
+                if (payment == null)
+                    return NotFound("Payment not found");
 
-            return Ok(payment);
+                return Ok(payment);
+            }catch (PaymentNotFoundException ex)
+            {
+                _logger.LogError(ex, $"Failed to retrieve Payment with ID: {id}.",id);
+                return StatusCode(500, "Internal server error");
+            }
         }
 
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetPaymentsByUserId(int userId)
+        {
+            // Check if the user exists
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return NotFound(new { message = "User not found." });
+            }
+
+            // Retrieve payments for the given user
+            var payments = await _context.Payments
+                                          .Where(p => p.UserId == userId)
+                                          .ToListAsync();
+
+            if (payments == null || payments.Count == 0)
+            {
+                return NotFound(new { message = "No payments found for this user." });
+            }
+
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,  // Preserve object references to handle circular references
+                WriteIndented = true // Optional: makes the output JSON more readable (pretty print)
+            };
+
+            // Serialize the reviews with circular reference handling
+            var json = JsonSerializer.Serialize(payments, options);
+
+            // Return the reviews as JSON
+            return Content(json, "application/json");
+        }
+
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Post(Payment payment)
         {
-            var result = _paymentService.AddPayment(payment);
-            return CreatedAtAction(nameof(GetPaymentById), new { id = result }, payment);
+            try
+            {
+                _logger.LogInformation("Creating new payment...");
+                var result = _paymentService.AddPayment(payment);
+                return CreatedAtAction(nameof(GetPaymentById), new { id = result }, payment);
+            }catch(Exception)
+            {
+                _logger.LogError("Failed to create new Payment...");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public IActionResult Put(Payment payment)
         {
-            var result = _paymentService.UpdatePayment(payment);
-            if (result == "Payment not found")
-                return NotFound(result);
+            try
+            {
+                _logger.LogInformation($"Updating the Payment...");
+                var result = _paymentService.UpdatePayment(payment);
+                if (result == "Payment not found")
+                    return NotFound(result);
 
-            return Ok(result);
+                return Ok(result);
+            }catch(Exception ex)
+            {
+                _logger.LogError(ex, "Failed to Update the payment.");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var result = _paymentService.DeletePayment(id);
-            if (result == "Payment not found")
-                return NotFound(result);
+            try
+            {
+                _logger.LogInformation($"Deleting payment with ID: {id}", id);
+                var result = _paymentService.DeletePayment(id);
+                if (result == "Payment not found")
+                    return NotFound(result);
 
-            return Ok(result);
+                return Ok(result);
+            }catch(PaymentNotFoundException ex)
+            {
+                _logger.LogError(ex, "Failed to delete the payment.");
+                return StatusCode(500, "Internal server error");
+            }
         }
     }
 }

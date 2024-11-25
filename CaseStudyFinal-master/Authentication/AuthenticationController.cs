@@ -1,8 +1,11 @@
 ﻿using JWT_Auth_Demo.Authentication;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using RoadReady.Data;
+using RoadReady.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -10,6 +13,7 @@ using Training_Auth_Demo.Authentication;
 
 namespace RoadReady.Authentication
 {
+    [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
@@ -17,12 +21,14 @@ namespace RoadReady.Authentication
         private readonly UserManager<ApplicationUser> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
         public AuthenticationController(UserManager<ApplicationUser> userManager,
-            RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+            RoleManager<IdentityRole> roleManager, IConfiguration configuration, ApplicationDbContext context)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;
             _configuration = configuration;
+            _context = context;
         }
 
         [HttpPost]
@@ -64,14 +70,14 @@ namespace RoadReady.Authentication
 
         [HttpPost]
         [Route("register")]
-        public async Task<IActionResult> Register(RegisterModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            var userExists = await userManager.FindByNameAsync(model.UserName);
+            var userExists = await userManager.FindByEmailAsync(model.Email);
             if (userExists != null)
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     new Response { Status = "Error", Message = "User already exists!" });
 
-            ApplicationUser user = new ApplicationUser()
+            var user = new ApplicationUser()
             {
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
@@ -87,60 +93,46 @@ namespace RoadReady.Authentication
                         Status = "Error",
                         Message = "User creation failed! Please check user details and try again."
                     });
-
-            if (!await roleManager.RoleExistsAsync(UserRoles.User))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-            if (!await roleManager.RoleExistsAsync(UserRoles.User))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-
-            if (await roleManager.RoleExistsAsync(UserRoles.User))
+            if(model.Role == "Admin")
             {
-                await userManager.AddToRoleAsync(user, UserRoles.User);
+                if (!await roleManager.RoleExistsAsync("Admin"))
+                {
+                    // Create the "Admin" role if it doesn't exist
+                    var role = new IdentityRole("Admin");
+                    await roleManager.CreateAsync(role);
+                }
+                await userManager.AddToRoleAsync(user, "Admin");
             }
+            else
+            {
+                if (!await roleManager.RoleExistsAsync("User"))
+                {
+                    // Create the "User" role if it doesn't exist
+                    var role = new IdentityRole("User");
+                    await roleManager.CreateAsync(role);
+                }
+                await userManager.AddToRoleAsync(user, "User");
+            }
+
+            var customUser = new User
+            {
+                //UserId = int.Parse(user.Id),
+                FirstName = user.UserName,
+                PasswordHash = user.Password,
+                PhoneNumber = user.PhoneNumber,
+                Email = user.Email,
+                Role = model.Role,
+                UpdatedAt = DateTime.UtcNow,
+                CreatedAt = DateTime.UtcNow,
+
+            };
+            _context.Users.Add(customUser);
+            await _context.SaveChangesAsync();
 
             return Ok(new Response { Status = "Success", Message = "User created successfully!" });
 
         }
 
-        [HttpPost]
-        [Route("register-admin")]
-        public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
-        {
-            var userExists = await userManager.FindByNameAsync(model.UserName);
-            if (userExists != null)
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    new Response { Status = "Error", Message = "User already exists!" });
-
-            ApplicationUser user = new ApplicationUser()
-            {
-                Email = model.Email,
-                SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.UserName,
-                Password = model.Password,
-                PhoneNumber = model.PhoneNumber
-            };
-            var result = await userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    new Response
-                    {
-                        Status = "Error",
-                        Message = "User creation failed! Please check user details and try again."
-                    });
-
-            if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
-            if (!await roleManager.RoleExistsAsync(UserRoles.User))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-
-            if (await roleManager.RoleExistsAsync(UserRoles.Admin))
-            {
-                await userManager.AddToRoleAsync(user, UserRoles.Admin);
-            }
-
-            return Ok(new Response { Status = "Success", Message = "Admin created successfully!" });
-        }
-
-
+        
     }
 }

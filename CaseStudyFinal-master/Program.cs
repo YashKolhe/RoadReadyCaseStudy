@@ -5,8 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RoadReady.Authentication;
+using RoadReady.Controllers;
 using RoadReady.Data;
+using RoadReady.Repositories;
 using System.Text;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using RoadReady.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("myconnection")));
+
     // For Identity
     builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
           .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -42,9 +48,18 @@ var builder = WebApplication.CreateBuilder(args);
             (Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
         };
     });
+    
 
 
     builder.Services.AddControllers();
+
+    //Register all the services and repositories 
+    builder.Services.AddScoped<ICarService, CarService>();
+    builder.Services.AddScoped<IPaymentService, PaymentService>();
+    builder.Services.AddScoped<IReviewService, ReviewService>();
+    builder.Services.AddScoped<IUserService, UserService>();
+    builder.Services.AddScoped<IReservationService, ReservationService>();
+
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen(c =>
@@ -74,8 +89,16 @@ var builder = WebApplication.CreateBuilder(args);
             }
         });
     });
+    builder.Services.AddCors(
+                option =>
+                {
+                    option.AddDefaultPolicy(builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                    });
+                }
+                );
 
-    
 
     var app = builder.Build();
 
@@ -87,6 +110,7 @@ var builder = WebApplication.CreateBuilder(args);
     }
 
     app.UseHttpsRedirection();
+    app.UseCors();
     app.UseAuthentication();
     app.UseAuthorization();
 

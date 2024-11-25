@@ -15,5 +15,6 @@ namespace JWT_Auth_Demo.Authentication
         public string Password { get; set; }
         [Required(ErrorMessage = "PhoneNumber is required")]
         public string PhoneNumber { get; set; }
+        public string Role { get; set; }
     }
 }

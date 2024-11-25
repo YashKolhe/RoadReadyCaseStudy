@@ -15,44 +15,79 @@ namespace RoadReady.Repositories
 
         public List<Payment> GetAllPayments()
         {
-            return _context.Payments.ToList();
+            try
+            {
+                return _context.Payments.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public Payment GetPaymentById(int id)
         {
-            return _context.Payments.Find(id);
+            try
+            {
+                return _context.Payments.Find(id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public int AddPayment(Payment payment)
         {
-            _context.Payments.Add(payment);
-            _context.SaveChanges();
-            return payment.PaymentId;
+            try
+            {
+                _context.Payments.Add(payment);
+                _context.SaveChanges();
+                return payment.PaymentId;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public string UpdatePayment(Payment payment)
         {
-            var existingPayment = _context.Payments.Find(payment.PaymentId);
-            if (existingPayment == null) return "Payment not found";
+            try
+            {
+                var existingPayment = _context.Payments.Find(payment.PaymentId);
+                if (existingPayment == null) return "Payment not found";
 
-            existingPayment.ReservationId = payment.ReservationId;
-            existingPayment.PaymentDate = payment.PaymentDate;
-            existingPayment.Amount = payment.Amount;
-            existingPayment.PaymentMethod = payment.PaymentMethod;
-            existingPayment.Status = payment.Status;
+                existingPayment.ReservationId = payment.ReservationId;
+                existingPayment.PaymentDate = payment.PaymentDate;
+                existingPayment.Amount = payment.Amount;
+                existingPayment.PaymentMethod = payment.PaymentMethod;
+                existingPayment.Status = payment.Status;
 
-            _context.SaveChanges();
-            return "Payment updated successfully";
+                _context.SaveChanges();
+                return "Payment updated successfully";
+            }
+            catch(Exception)
+            {
+                throw;
+            }
         }
 
         public string DeletePayment(int id)
         {
-            var existingPayment = _context.Payments.Find(id);
-            if (existingPayment == null) return "Payment not found";
+            try
+            {
+                var existingPayment = _context.Payments.Find(id);
+                if (existingPayment == null) return "Payment not found";
 
-            _context.Payments.Remove(existingPayment);
-            _context.SaveChanges();
-            return "Payment deleted successfully";
+                _context.Payments.Remove(existingPayment);
+                _context.SaveChanges();
+                return "Payment deleted successfully";
+            }
+            catch (Exception) 
+            {
+                throw;
+            }
         }
     }
 }

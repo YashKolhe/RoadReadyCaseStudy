@@ -14,44 +14,79 @@ namespace RoadReady.Repositories
 
         public List<User> GetAllUsers()
         {
-            return _context.Users.ToList();
+            try
+            {
+                return _context.Users.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public User GetUserById(int id)
         {
-            return _context.Users.Find(id);
+            try
+            {
+                return _context.Users.Find(id);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public int AddUser(User user)
         {
-            _context.Users.Add(user);
-            _context.SaveChanges();
-            return user.UserId;
+            try
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+                return user.UserId;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public string UpdateUser(User user)
         {
-            var existingUser = _context.Users.Find(user.UserId);
-            if (existingUser == null) return "User not found";
+            try
+            {
+                var existingUser = _context.Users.Find(user.UserId);
+                if (existingUser == null) return "User not found";
 
-            existingUser.FirstName = user.FirstName;
-            existingUser.LastName = user.LastName;
-            existingUser.Email = user.Email;
-            existingUser.PhoneNumber = user.PhoneNumber;
-            existingUser.Role = user.Role;
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.Email = user.Email;
+                existingUser.PhoneNumber = user.PhoneNumber;
+                existingUser.Role = user.Role;
 
-            _context.SaveChanges();
-            return "User updated successfully";
+                _context.SaveChanges();
+                return "User updated successfully";
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public string DeleteUser(int id)
         {
-            var existingUser = _context.Users.Find(id);
-            if (existingUser == null) return "User not found";
+            try
+            {
+                var existingUser = _context.Users.Find(id);
+                if (existingUser == null) return "User not found";
 
-            _context.Users.Remove(existingUser);
-            _context.SaveChanges();
-            return "User deleted successfully";
+                _context.Users.Remove(existingUser);
+                _context.SaveChanges();
+                return "User deleted successfully";
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

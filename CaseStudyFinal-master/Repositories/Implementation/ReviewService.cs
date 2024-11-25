@@ -14,41 +14,76 @@ namespace RoadReady.Repositories
 
         public List<Review> GetAllReviews()
         {
-            return _context.Reviews.ToList();
+            try
+            {
+                return _context.Reviews.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public Review GetReviewById(int id)
         {
-            return _context.Reviews.Find(id);
+            try
+            {
+                return _context.Reviews.Find(id);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
-
+        
         public int AddReview(Review review)
         {
-            _context.Reviews.Add(review);
-            _context.SaveChanges();
-            return review.ReviewId;
+            try
+            {
+                _context.Reviews.Add(review);
+                _context.SaveChanges();
+                return review.ReviewId;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public string UpdateReview(Review review)
         {
-            var existingReview = _context.Reviews.Find(review.ReviewId);
-            if (existingReview == null) return "Review not found";
+            try
+            {
+                var existingReview = _context.Reviews.Find(review.ReviewId);
+                if (existingReview == null) return "Review not found";
 
-            existingReview.Rating = review.Rating;
-            existingReview.Comments = review.Comments;
+                existingReview.Rating = review.Rating;
+                existingReview.Comments = review.Comments;
 
-            _context.SaveChanges();
-            return "Review updated successfully";
+                _context.SaveChanges();
+                return "Review updated successfully";
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public string DeleteReview(int id)
         {
-            var existingReview = _context.Reviews.Find(id);
-            if (existingReview == null) return "Review not found";
+            try
+            {
+                var existingReview = _context.Reviews.Find(id);
+                if (existingReview == null) return "Review not found";
 
-            _context.Reviews.Remove(existingReview);
-            _context.SaveChanges();
-            return "Review deleted successfully";
+                _context.Reviews.Remove(existingReview);
+                _context.SaveChanges();
+                return "Review deleted successfully";
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

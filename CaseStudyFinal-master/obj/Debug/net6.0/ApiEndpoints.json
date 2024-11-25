@@ -32,22 +32,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RoadReady.Authentication.AuthenticationController",
-    "Method": "RegisterAdmin",
-    "RelativePath": "api/Authentication/register-admin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "JWT_Auth_Demo.Authentication.RegisterModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "RoadReady.Controllers.CarController",
     "Method": "GetAll",
     "RelativePath": "api/Car",
@@ -196,6 +180,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RoadReady.Controllers.PaymentController",
+    "Method": "GetPaymentsByUserId",
+    "RelativePath": "api/Payment/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RoadReady.Controllers.ReservationController",
     "Method": "GetAll",
     "RelativePath": "api/Reservation",
@@ -270,6 +270,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RoadReady.Controllers.ReservationController",
+    "Method": "GetReservationsByCarId",
+    "RelativePath": "api/Reservation/car/{carId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RoadReady.Controllers.ReviewController",
     "Method": "GetAll",
     "RelativePath": "api/Review",
@@ -337,6 +353,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RoadReady.Controllers.ReviewController",
+    "Method": "GetReviewsByCarId",
+    "RelativePath": "api/Review/car/{carId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carId",
         "Type": "System.Int32",
         "IsRequired": true
       }

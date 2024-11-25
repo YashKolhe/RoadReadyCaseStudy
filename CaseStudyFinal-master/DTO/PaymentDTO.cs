@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RoadReady.Models;
 
-namespace RoadReady.Models
+namespace RoadReady.DTO
 {
-    public partial class Payment
+    public class PaymentDTO
     {
         public int PaymentId { get; set; }
         public int? ReservationId { get; set; }

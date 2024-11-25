@@ -14,46 +14,78 @@ namespace RoadReady.Repositories
 
         public List<Car> GetAllCars()
         {
-            return _context.Cars.ToList();
+            try
+            {
+                return _context.Cars.ToList();
+            }
+            catch (Exception ex) 
+            {
+                throw;
+            }
+            
         }
 
         public Car GetCarById(int id)
         {
-            return _context.Cars.Find(id);
+            try
+            {
+                return _context.Cars.Find(id);
+            }catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public int AddCar(Car car)
         {
-            _context.Cars.Add(car);
-            _context.SaveChanges();
-            return car.CarId;
+            try
+            {
+                _context.Cars.Add(car);
+                _context.SaveChanges();
+                return car.CarId;
+            }catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public string UpdateCar(Car car)
         {
-            var existingCar = _context.Cars.Find(car.CarId);
-            if (existingCar == null) return "Car not found";
+            try
+            {
+                var existingCar = _context.Cars.Find(car.CarId);
+                if (existingCar == null) return "Car not found";
 
-            existingCar.Make = car.Make;
-            existingCar.Model = car.Model;
-            existingCar.Year = car.Year;
-            existingCar.Color = car.Color;
-            existingCar.PricePerDay = car.PricePerDay;
-            existingCar.AvailabilityStatus = car.AvailabilityStatus;
-            existingCar.Description = car.Description;
+                existingCar.Make = car.Make;
+                existingCar.Model = car.Model;
+                existingCar.Year = car.Year;
+                existingCar.Color = car.Color;
+                existingCar.PricePerDay = car.PricePerDay;
+                existingCar.AvailabilityStatus = car.AvailabilityStatus;
+                existingCar.Description = car.Description;
 
-            _context.SaveChanges();
-            return "Car updated successfully";
+                _context.SaveChanges();
+                return "Car updated successfully";
+            }catch(Exception ex)
+            { 
+                throw;
+            }
         }
 
         public string DeleteCar(int id)
         {
-            var existingCar = _context.Cars.Find(id);
-            if (existingCar == null) return "Car not found";
+            try
+            {
+                var existingCar = _context.Cars.Find(id);
+                if (existingCar == null) return "Car not found";
 
-            _context.Cars.Remove(existingCar);
-            _context.SaveChanges();
-            return "Car deleted successfully";
+                _context.Cars.Remove(existingCar);
+                _context.SaveChanges();
+                return "Car deleted successfully";
+            }catch(Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

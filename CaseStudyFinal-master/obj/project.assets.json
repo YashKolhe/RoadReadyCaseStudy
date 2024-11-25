@@ -3044,11 +3044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dot Net FSD Training Phase3\\RoadReadyProj\\CaseStudyFinal-master\\RoadReady.csproj",
+      "projectUniqueName": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\RoadReady.csproj",
       "projectName": "RoadReady",
-      "projectPath": "E:\\Dot Net FSD Training Phase3\\RoadReadyProj\\CaseStudyFinal-master\\RoadReady.csproj",
+      "projectPath": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\RoadReady.csproj",
       "packagesPath": "C:\\Users\\yashk\\.nuget\\packages\\",
-      "outputPath": "E:\\Dot Net FSD Training Phase3\\RoadReadyProj\\CaseStudyFinal-master\\obj\\",
+      "outputPath": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yashk\\AppData\\Roaming\\NuGet\\NuGet.Config",

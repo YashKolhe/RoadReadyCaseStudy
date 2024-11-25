@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9YM8cWo6rvI=",
+  "dgSpecHash": "YfN2tVZ4kzo=",
   "success": true,
-  "projectFilePath": "E:\\Dot Net FSD Training Phase3\\RoadReadyProj\\CaseStudyFinal-master\\RoadReady.csproj",
+  "projectFilePath": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\RoadReady.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yashk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\yashk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

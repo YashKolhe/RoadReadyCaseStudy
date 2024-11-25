@@ -1,7 +1,144 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Dot Net FSD Training Phase3\\RoadReadyProj\\CaseStudyFinal-master\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\dto\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:dto\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\dto\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:dto\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\dto\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:dto\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\repositories\\implementation\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:repositories\\implementation\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\repositories\\implementation\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:repositories\\implementation\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241125063244_AddUserIdToPayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241125063244_AddUserIdToPayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\repositories\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:repositories\\implementation\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\repositories\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:repositories\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\authentication\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:authentication\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\authentication\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:authentication\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\exceptions\\reviewnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:exceptions\\reviewnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\repositories\\implementation\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:repositories\\implementation\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\exceptions\\reservationnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:exceptions\\reservationnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\exceptions\\paymentnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:exceptions\\paymentnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\exceptions\\carnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:exceptions\\carnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122192112_Create Db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241122192112_Create Db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\authentication\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:authentication\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|e:\\dot net fsd training phase3\\roadready case study\\casestudyfinal-master\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E34784DE-1F67-40BD-9868-4DC363C8BDA4}|RoadReady.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122190938_Create db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241122190938_Create db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122183715_Db creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241122183715_Db creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +155,448 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationDTO.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\ReservationDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ReservationDTO.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\ReservationDTO.cs",
+              "RelativeToolTip": "DTO\\ReservationDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:23:44.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentDTO.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\PaymentDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\PaymentDTO.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\PaymentDTO.cs",
+              "RelativeToolTip": "DTO\\PaymentDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:23:30.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:23:19.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewDTO.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\ReviewDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ReviewDTO.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\ReviewDTO.cs",
+              "RelativeToolTip": "DTO\\ReviewDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:22:56.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Review.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:34:26.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20241125063244_AddUserIdToPayments.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241125063244_AddUserIdToPayments.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241125063244_AddUserIdToPayments.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241125063244_AddUserIdToPayments.cs",
+              "RelativeToolTip": "Migrations\\20241125063244_AddUserIdToPayments.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:32:44.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T20:00:57.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T19:17:21.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReviewNotFoundException.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\ReviewNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ReviewNotFoundException.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\ReviewNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\ReviewNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T19:06:36.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\UserService.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\UserService.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\UserService.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T19:03:05.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\ReviewService.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\ReviewService.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\ReviewService.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\ReviewService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T19:00:09.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\ReservationService.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\ReservationService.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\ReservationService.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\ReservationService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwFoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T18:58:11.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReservationNotFoundException.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\ReservationNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ReservationNotFoundException.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\ReservationNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\ReservationNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T18:22:14.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\PaymentService.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\PaymentService.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\PaymentService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAhwBMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T18:15:06.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentNotFoundException.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\PaymentNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\PaymentNotFoundException.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\PaymentNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\PaymentNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T17:59:45.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\CarService.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\CarService.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Repositories\\Implementation\\CarService.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\CarService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwDUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:50:21.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CarNotFoundException.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\CarNotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\CarNotFoundException.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Exceptions\\CarNotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\CarNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T17:24:35.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20241122192112_Create Db.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122192112_Create Db.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241122192112_Create Db.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122192112_Create Db.cs",
+              "RelativeToolTip": "Migrations\\20241122192112_Create Db.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwA8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:21:12.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Authentication\\LoginModel.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\LoginModel.cs",
+              "RelativeToolTip": "Authentication\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:14:45.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241122190938_Create db.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122190938_Create db.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241122190938_Create db.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122190938_Create db.cs",
+              "RelativeToolTip": "Migrations\\20241122190938_Create db.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:09:38.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:38:52.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T18:38:09.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20241122183715_Db creation.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122183715_Db creation.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241122183715_Db creation.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Migrations\\20241122183715_Db creation.cs",
+              "RelativeToolTip": "Migrations\\20241122183715_Db creation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:37:15.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "Authentication\\RegisterModel.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\RegisterModel.cs",
+              "RelativeToolTip": "Authentication\\RegisterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:49:37.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Authentication\\ApplicationUser.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\ApplicationUser.cs",
+              "RelativeToolTip": "Authentication\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:44:53.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:41:20.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Authentication\\AuthenticationController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Authentication\\AuthenticationController.cs",
+              "RelativeToolTip": "Authentication\\AuthenticationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:36:03.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarDTO.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\CarDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\CarDTO.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\DTO\\CarDTO.cs",
+              "RelativeToolTip": "DTO\\CarDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:32:59.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwEUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:53:00.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwFQAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:52:17.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAE0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:51:10.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAE8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:49:32.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CarController.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Controllers\\CarController.cs",
+              "RelativeToolTip": "Controllers\\CarController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:32:28.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Dot Net FSD Training Phase3\\RoadReady Case Study\\CaseStudyFinal-master\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:26:43.153Z",
+              "EditorCaption": ""
             }
           ]
         }
