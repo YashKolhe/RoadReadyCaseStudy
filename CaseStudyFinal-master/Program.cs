@@ -12,6 +12,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using RoadReady.Models;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,10 +49,13 @@ var builder = WebApplication.CreateBuilder(args);
             (Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
         };
     });
-    
-
-
-    builder.Services.AddControllers();
+    // Enforce Global Authorization Policy
+    builder.Services.AddAuthorization(options =>
+    {
+        options.FallbackPolicy = new AuthorizationPolicyBuilder()
+            .RequireAuthenticatedUser()
+            .Build();
+    });
 
     //Register all the services and repositories 
     builder.Services.AddScoped<ICarService, CarService>();
@@ -59,6 +63,8 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddScoped<IReviewService, ReviewService>();
     builder.Services.AddScoped<IUserService, UserService>();
     builder.Services.AddScoped<IReservationService, ReservationService>();
+
+    builder.Services.AddControllers();
 
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
@@ -89,16 +95,13 @@ var builder = WebApplication.CreateBuilder(args);
             }
         });
     });
-    builder.Services.AddCors(
-                option =>
-                {
-                    option.AddDefaultPolicy(builder =>
-                    {
-                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-                    });
-                }
-                );
-
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("Policy", policyBuilder =>
+        {
+            policyBuilder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        });
+    });
 
     var app = builder.Build();
 
@@ -110,7 +113,7 @@ var builder = WebApplication.CreateBuilder(args);
     }
 
     app.UseHttpsRedirection();
-    app.UseCors();
+    app.UseCors("Policy");
     app.UseAuthentication();
     app.UseAuthorization();
 

@@ -15,6 +15,8 @@ namespace RoadReady.Controllers
     [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class ReservationController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -40,7 +42,7 @@ namespace RoadReady.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("{id}")]
         public IActionResult GetReservationById(int id)
         {

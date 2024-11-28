@@ -15,6 +15,7 @@ namespace RoadReady.Controllers
     [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PaymentController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

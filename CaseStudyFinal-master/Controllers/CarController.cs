@@ -11,6 +11,7 @@ namespace RoadReady.Controllers
     [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CarController : ControllerBase
     {
         private readonly ICarService _carService;
@@ -91,7 +92,7 @@ namespace RoadReady.Controllers
                 return Ok(result);
             }catch(CarNotFoundException ex)
             {
-                _logger.LogError(ex, $"Failed to update car");
+                _logger.LogError(ex, "Failed to update car");
                 return StatusCode(500, "Internal server error");
             }
         }

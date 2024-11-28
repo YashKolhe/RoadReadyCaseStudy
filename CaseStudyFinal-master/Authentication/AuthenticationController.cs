@@ -1,4 +1,5 @@
 ﻿using JWT_Auth_Demo.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -30,7 +31,7 @@ namespace RoadReady.Authentication
             _configuration = configuration;
             _context = context;
         }
-
+        [AllowAnonymous]
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
@@ -67,7 +68,7 @@ namespace RoadReady.Authentication
             }
             return Unauthorized();
         }
-
+        [AllowAnonymous]
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)

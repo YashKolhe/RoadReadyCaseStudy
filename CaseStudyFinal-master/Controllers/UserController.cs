@@ -11,12 +11,13 @@ namespace RoadReady.Controllers
     [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    [Authorize]
+    public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        private readonly ILogger<UsersController> _logger;
+        private readonly ILogger<UserController> _logger;
 
-        public UsersController(IUserService userService, ILogger<UsersController> logger)
+        public UserController(IUserService userService, ILogger<UserController> logger)
         {
             _userService = userService;
             _logger = logger;
@@ -69,7 +70,7 @@ namespace RoadReady.Controllers
             {
                 _logger.LogInformation("Creating new user.");
                 int result = _userService.AddUser(user);
-                return Ok(result);
+                return CreatedAtAction(nameof(GetUserById), new { id = result }, user);
             }
             catch (Exception)
             {

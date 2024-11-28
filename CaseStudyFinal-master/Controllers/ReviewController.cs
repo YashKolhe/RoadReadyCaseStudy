@@ -15,6 +15,7 @@ namespace RoadReady.Controllers
     [EnableCors("Policy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ReviewController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
